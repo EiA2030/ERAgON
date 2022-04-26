@@ -19,7 +19,6 @@
 #' *`value` = strength of relationship for from-to object pair as response as vote count
 #' @export
 #' @import data.table
-#' @importFrom ERAg OutcomeCodes
 #' @importFrom data.table copy
 PrepareChordData<-function(Data,
                            OutcomeCodes,
