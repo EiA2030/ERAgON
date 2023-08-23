@@ -81,11 +81,13 @@ ExtractRasters<-function(Data,
 
     colnames(X)[2]<-"Values"
 
-    X<-X[,list(Mean=mean(Values,na.rm=T),
-               SD=sd(Values,na.rm=T),
-               Median=median(Values,na.rm = T),
-               Mode=getmode(Values),N.Cells=.N,
-               NA.Cells=length(is.na(Values))),by=ID]
+    X <- X[, list(Mean = as.numeric(mean(Values, na.rm = T)),
+                  SD = as.numeric(sd(Values,na.rm = T)),
+                  Median = as.numeric(median(Values, na.rm = T)),
+                  Mode = as.numeric(getmode(Values)),
+                  N.Cells = .N,
+                  NA.Cells = length(is.na(Values))),
+           by = ID]
 
     colnames(X)[2:7]<-paste0(A,".",colnames(X)[2:7])
 
