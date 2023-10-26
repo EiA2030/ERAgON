@@ -7,8 +7,8 @@
 ExtractPOWER(
   Data,
   ID,
-  Parameters = c("ALLSKY_SFC_SW_DWN", "PRECTOT", "PS", "QV2M", "RH2M", "T2M",
-    "T2M_MAX", "T2M_MIN", "WS2M"),
+  Parameters = c("ALLSKY_SFC_SW_DWN", "PRECTOT", "PS", "QV2M", "RH2M", "T2M", "T2M_MAX",
+    "T2M_MIN", "WS2M"),
   Rename = c("Solar.Rad", "Rain", "Pressure", "Humid", "Temp.Min", "Temp.Max",
     "Temp.Mean", "WindSpeed", "Specific.Humid"),
   StartDate = "1983-07-01",
