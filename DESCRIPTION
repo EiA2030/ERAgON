@@ -1,6 +1,6 @@
 Package: ERAgON
 Title: Evidence for Resilient Agriculture Additional Tools and Datasets
-Version: 0.0.1
+Version: 1.0.0
 Authors@R: c(
     person(given = "Peter",
            family = "Steward",
