@@ -1,0 +1,12 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Steward
+  given-names: Peter
+- family-names: Rosenstock
+  given-names: Todd
+orcid: 
+title: ERAgON R-package: Helper functions and biophysical data for ERA
+version: ERAgON_1.0.0
+date-released: 2023-12-04
+                                
