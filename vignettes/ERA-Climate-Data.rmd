@@ -240,7 +240,7 @@ To explore annual deviance from long-term averages subtract the long-term averag
 
 Once we have extracted the climate data we can estimate long-term, annual and seasonal climate variables for each buffered point location. We will be calculating variables such as reference evapotranspiration, rainfall, growing degree days and dry spells.    
 
-The `ERAg` functions used in this section of the vignette are less generalisable to non-ERA datasets and require specific fields in the dataset to define growing seasons including fields describing Planting and Harvest dates.
+The `ERAg` functions used in this section of the vignette are less generalisable to non-ERA datasets and require specific fields in the dataset to define growing seasons including fields describing planting and harvest dates.
 
 ### Load required packages
 ```{r CS load packages, eval=F,echo=T}
