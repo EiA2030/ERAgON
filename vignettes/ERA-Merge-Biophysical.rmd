@@ -23,22 +23,17 @@ In this vignette we will be exploring how to connect ERA to soil and seasonal cl
 
 ### 1. Prepare analytical environment
 
-```{r load packages, eval=F,echo=T}
+```{r load packages, eval=T,echo=T}
   if(!require("pacman", character.only = TRUE)){
     install.packages("pacman",dependencies = T)
   }
-  
-  required.packages <- c("ERAg","data.table","miceadds","dplyr","ERAgON")
-  p_load(char=required.packages,install = T,character.only = T)
-    
-```
 
-```{r load packages real, eval=T,echo=F,include=F}
-  require(ERAg)
-  require(data.table)
-  require(foreach)
-```
+  if(!require("ERAg", character.only = TRUE)){
+    devtools::install_github("https://github.com/EiA2030/ERAg",dependencies = T)
+  }
 
+  pacman::p_load(data.table,miceadds,dplyr,ERAgON)
+```
 #### Load climate data
 In Section 2 of the `ERA-Climate-Data` vignette we saved the outputs of the `ClimateCalc` function to a folder `ERA Climate Analysis/` from which we will load the seasonal climate data we need to merge with ERA.
 
